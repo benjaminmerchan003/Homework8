@@ -1,0 +1,275 @@
+/* Color palette
+   #543D59 - dark purple (header, footer)
+   #a299af - light purple (work experience)
+   #ffffff - white (education)
+   #DEDEE3 - light gray (header text)
+   #f5f83f - yellow (links)
+   #080808 - black (text)
+   (3, 3, 2) - black (hover links)
+*/
+
+html, body {
+	
+	margin: 0;
+	
+}
+
+
+
+html{
+
+	box-sizing: border-box;
+
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+h1, h2, h3 {
+	color: #000000;
+}
+body {
+	font-family: "IBM Plex Serif", serif;
+	font-size: 110%;
+	
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	
+	color: #080808;
+	line-height: 1.8;
+}
+h1 {
+	 font-family: "Grenze", serif;
+  font-size: 3.2em;
+	margin-bottom: .4em;
+	color: #000000;
+	margin-top: 0;
+}
+h2 {
+	font-family: "Grenze", serif;
+  	font-size: 1.6em;
+	margin-bottom: .2em;
+	color: #000000;
+	margin-top: 0;
+}
+h3 {
+	font-size: 1.2em;
+}
+p {
+	margin-bottom: 1em;
+}
+a {
+	color: #f5f83f;
+}
+a:hover {
+	color: rgb(3, 3, 2);
+}
+
+pre.wrong {
+	border-left-color: red;
+}
+pre.correct {
+	border-left-color: green;
+}
+dt {
+	font-style: italic;
+	font-size:1.2em;
+}
+dd {
+	margin-bottom: 1.4em;
+}
+
+
+
+.center {
+	text-align: center;
+}
+header h2 {
+	padding-bottom: .2em;
+	border-bottom: 1px solid #F3F900;
+	margin-top: 0;
+}
+
+
+footer {
+
+	font-size: .8em;
+	line-height: 1em;
+	margin: auto;
+	background: #543D59;
+	color: #DEDEE3;
+	border-top: 3px solid #0c0c0b;
+	text-align: center;
+	
+}
+
+.flowRight {
+	float: right;
+	margin-left: 10px;
+	
+}
+.flowLeft {
+	float: left;
+	margin-right: 10px;
+}
+
+
+
+
+hr {
+	border: none;
+	border-top: 1px solid #080807;
+	margin-bottom: .4em;
+	clear: both;
+}
+
+
+
+header{
+
+	
+	background: #543D59;
+	color: #DEDEE3;
+	
+	border-bottom: 3px solid #0c0c0b;
+	border-top: 3px solid #0c0c0b;
+}
+
+
+
+
+footer p{
+	margin: 0;
+}
+.education{
+	background-image: linear-gradient(rgba(252, 249, 249, 0.884), rgba(251, 249, 253, 0.6)), url(../images/csun.jpg);  /* learned from https://www.w3schools.com/css/css3_backgrounds.asp */
+	background-size: cover;
+	background-repeat: no-repeat, no-repeat;
+	background-position: center, right;
+	background-color: #ffff;
+	color: #030303;
+
+	border-bottom: 3px solid #0c0c0b;
+	border-top: 3px solid #0c0c0b;
+	position: relative;
+	
+}
+
+.education p{
+	font-weight: bold;
+}
+
+.logo-link {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* https://docs.joomla.org/Creating_clickable_background_images_using_CSS adds a transparent overlay to the background csun banner to make it clickable */
+
+.workback{
+	
+	background-color: #a299af;
+}
+
+.bignamehead{
+	font-size: 5vw;
+	text-align: center;
+
+}
+
+.specialhead2{
+	color: azure;
+}
+
+.content-wrap{
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 50px;
+	overflow: hidden;
+
+}
+
+
+.contact-info a {
+	padding: 10px;
+	display: inline-block;
+}
+
+.profile-img {
+	border-radius: 50%;
+	
+	height: auto;
+	
+}
+
+header h1, header h2 {
+	margin: 0;
+}
+
+.column-narrow{
+
+width: 30%;
+float: left;
+min-height: 175px;
+padding-right: 3%;
+
+
+}
+
+.column-wide{
+	width: 70%;
+	float: left;
+	min-height: 225px;
+}
+
+
+
+.main-nav {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	background: #0c0c0b;
+	text-align: left;
+	
+	
+}
+
+.main-nav a:last-child{
+	float:right;
+	border-left: 1px solid #bbbbbb;	
+	border-right: none;
+}
+
+.main-nav a:hover:last-child{
+color:#f25fff
+
+}
+
+.main-nav a {
+	display: inline-block;
+	padding: 15px 20px;
+	color: #DEDEE3;
+	text-decoration: none;
+	border-right: 1px solid #bbbbbb;
+}
+
+
+.main-nav a:hover {
+	color: #f5f83f;
+}
+
+
+
+
+/* https://www.w3schools.com/css/css_navbar_horizontal.asp researched */
+
+header{
+	scroll-margin-top: 60px; 
+}
+
+/* https://www.w3schools.com/cssref/css_pr_scroll-margin.php */
